@@ -44,5 +44,11 @@ document.querySelectorAll('.point').forEach(function(button){
 
 /* TASK 4 (Adventure Mode)-- Move Item List to List */
 
+document.querySelectorAll('.point').forEach(function(button){
+  button.addEventListener('click', function(){
+    var totalPoints = document.querySelector('.total-points');
+    totalPoints.textContent = parseInt(totalPoints.textContent) + parseInt(button.textContent);
+  })
+});
 
 /* TASK 5 (Adventure Mode) -- Change Text Background Color From Palette */
